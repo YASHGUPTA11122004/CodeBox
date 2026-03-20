@@ -6,3 +6,4 @@ python-multipart
 django
 djangorestframework
 django-cors-headers
+gunicorn
