@@ -14,7 +14,7 @@ export default function CodeBox() {
   const handleRun = async () => {
     setOutput(`Running ${language} code...`);
     try {
-      const postResponse = await fetch("https://codebox-production.up.railway.app/compiler/compile/", {
+      const postResponse = await fetch("https://codebox-895s.onrender.com/compiler/compile/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code, language }),
@@ -32,7 +32,7 @@ export default function CodeBox() {
           return;
         }
 
-        const putResponse = await fetch("https://codebox-production.up.railway.app/compiler/compile/", {
+        const putResponse = await fetch("https://codebox-895s.onrender.com/compiler/compile/", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ code_id: postData.code_id, inputs: inputObj }),
@@ -52,7 +52,7 @@ export default function CodeBox() {
   const handleConvert = async () => {
     setOutput("Change kr rha hu bhai.....");
     try {
-      const res = await fetch("https://codebox-production.up.railway.app/convert", {
+      const res = await fetch("https://codebox-895s.onrender.com/convert", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ language, code }),
