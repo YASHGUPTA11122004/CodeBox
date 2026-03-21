@@ -452,7 +452,7 @@ Response: { pseudocode }
 
 ---
 
-## 💡 AI Ko Context Dene Ka Tarika
+## 💡 AI Ko Context Dene Ka Tarika if somebody wants my project
 
 Kisi bhi AI se changes karwane ke liye:
 
